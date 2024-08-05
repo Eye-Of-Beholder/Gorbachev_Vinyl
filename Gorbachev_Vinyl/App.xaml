@@ -1,0 +1,23 @@
+﻿<Application x:Class="Gorbachev_Vinyl.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Gorbachev_Vinyl"
+             StartupUri="WindowFolder/Authorization.xaml">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary/MenuButton.xaml"/>
+                <ResourceDictionary Source="Dictionary/TextBoxTheme.xaml"/>
+                <ResourceDictionary Source="Dictionary/TextBoxDictionary.xaml"/>
+                <ResourceDictionary Source="Dictionary/PasswordBoxDictionary.xaml"/>
+                <ResourceDictionary Source="Dictionary/ButtonDictionary.xaml"/>
+                <ResourceDictionary Source="Dictionary/PageORDDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

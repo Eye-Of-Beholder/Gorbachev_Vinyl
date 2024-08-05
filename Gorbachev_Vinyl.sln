@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gorbachev_Vinyl", "Gorbachev_Vinyl\Gorbachev_Vinyl.csproj", "{A154BF33-E963-446A-B4BA-36944DF9651B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A154BF33-E963-446A-B4BA-36944DF9651B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A154BF33-E963-446A-B4BA-36944DF9651B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A154BF33-E963-446A-B4BA-36944DF9651B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A154BF33-E963-446A-B4BA-36944DF9651B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF70199A-C8A2-4625-A91D-150B5BE5315B}
+	EndGlobalSection
+EndGlobal

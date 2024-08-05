@@ -1,0 +1,100 @@
+﻿<Window x:Class="Gorbachev_Vinyl.WindowFolder.AboutUs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gorbachev_Vinyl.WindowFolder"
+        mc:Ignorable="d"
+        Title="AboutUs" Height="600" Width="960"
+         WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+
+    <Border Background="#272537"
+            CornerRadius="20">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Image Source="/Images/Cros.png" Grid.Column="1" Margin="695,3,-2,37" MouseDown="Image_MouseDown"/>
+
+            <Image Source="/Images/sv.png" Grid.Column="1" Margin="669,10,62,43" MouseDown="Image_MouseDown_1"/>
+
+
+
+            <TextBlock Text="Новое искусство"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White"
+                   FontSize="22"
+                   Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="На главную" Height="50" Click="RadioButton_Click"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}"/>
+
+                <RadioButton  Content="О нас" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}"/>
+
+
+
+                <RadioButton Content="Выйти" Height="50" 
+                             Foreground="White"
+                             FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked"/>
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="1" Grid.Column="1">
+
+
+
+                <TextBlock Text="О нас"
+                           FontSize="28"
+                   Foreground="White" Height="40" />
+
+                <TextBlock Margin="10" FontSize="16" Foreground="White"><Run Text="Магазин «Новое Искусство» был открыт летом 2009 года командой, работающей с конца 90-х"/><LineBreak/><Run Text="над культовым магазином «Мир Кино»."/><LineBreak/><Run Text="На новом месте было принято решение делать упор на музыку на компакт-дисках и виниле."/><LineBreak/><Run Text="В 2013-м году журнал «Афиша» включил «Новое Искусство» в пятёрку лучших рекорд-сторов"/><LineBreak/><Run Text="Москвы. В нашем ассортименте представлены компакт-диски и виниловые пластинки"/><LineBreak/><Run Text="из Европы, США и Японии. Еженедельные поставки обеспечивают магазин всеми новинками"/><LineBreak/><Run Text="как от мейджоров Sony, Warner и Universal, так и от множества независимых лейблов."/></TextBlock>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="350"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Images/magaz.jpg" Grid.Column="0" Grid.Row="0" Margin="10,-22,10,-22" />
+
+                    <Image Source="/Images/magaz2.jpg" Grid.Column="1" Grid.Row="0" Margin="8,44,-2,44"/>
+
+
+
+
+
+                </Grid>
+
+            </StackPanel>
+
+
+        </Grid>
+
+    </Border>
+</Window>

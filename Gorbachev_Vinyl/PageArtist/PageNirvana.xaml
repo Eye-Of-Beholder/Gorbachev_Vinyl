@@ -1,0 +1,168 @@
+﻿<Window x:Class="Gorbachev_Vinyl.PageArtist.PageNirvana"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gorbachev_Vinyl.PageArtist"
+        mc:Ignorable="d"
+        Title="PageNirvana"  Height="600" Width="920"
+         WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+
+    <Border Background="#272537" CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Image Source="/Images/Cros.png" Grid.Column="1" Margin="692,10,9,44" MouseDown="Image_MouseDown"/>
+
+            <Image Source="/Images/sv.png" Grid.Column="1" Margin="669,10,35,43" MouseDown="Image_MouseDown_1"/>
+
+
+
+            <TextBlock Text="Новое искусство"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White"
+                   FontSize="22"
+                   Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="На главную" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked_1"/>
+
+                <RadioButton  Content="О нас" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked"/>
+
+
+
+                <RadioButton Content="Назад" Height="50" Click="RadioButton_Click"
+                             Foreground="White"
+                             FontSize="18"
+                             Style="{StaticResource MenuButton}" RenderTransformOrigin="0.51,0.57"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Grid.Column="1">
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="18*"/>
+                        <ColumnDefinition Width="17*" />
+
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Images/nirvana.jpg" Margin="5,5,5,0"/>
+                    <TextBlock Text="NIRVANA - In Utero" Grid.Row="0"
+                               Grid.Column="1" Margin="0,0,1,45"
+                               FontSize="35" Foreground="White"
+                               FontWeight="Black" Grid.ColumnSpan="3"/>
+
+                    <TextBlock Text="Артист:" Grid.ColumnSpan="2" Margin="15,56,121,104" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="NIRVANA" Grid.ColumnSpan="2" Margin="96,56,40,104" Grid.Column="1" x:Name="Artist"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+
+                    <TextBlock Text="Альбом:" Grid.ColumnSpan="2" Margin="15,100,46,60" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="In Utero" Grid.ColumnSpan="2" Margin="96,101,-35,59" Grid.Column="1" x:Name="Album"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+
+                    <TextBlock Text="Лейбл: Geffen Records" Grid.ColumnSpan="2" Margin="15,140,90,20" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="Формат:" Grid.ColumnSpan="2" Margin="15,180,90,180" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.RowSpan="2"/>
+
+                    <TextBlock Text="LP" Grid.ColumnSpan="2" Margin="96,180,9,180" Grid.Column="1" x:Name="Format"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.RowSpan="2"/>
+
+                    <TextBlock Text="Каталожный номер: 720642453612" Grid.ColumnSpan="2" Margin="15,20,28,140" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+
+                    <TextBlock Text="Штрихкод: 0720642453612" Grid.ColumnSpan="2" Margin="15,60,28,100" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+                    <TextBlock Text="Дата: 18 июня 2015" Grid.ColumnSpan="2" Margin="15,98,28,62" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" FontSize="12" FontWeight="Light" Foreground="White" Margin="0,0,2,-99" Grid.RowSpan="2">
+                        Треклист :
+                        <LineBreak />
+                        A1 Serve The Servants
+                         <LineBreak/>
+                        A2 Scentless Apprentice
+                        <LineBreak/>
+                        
+                       A3 Heart-Shaped Box
+                        <LineBreak/>
+                       A4 Rape Me
+                        <LineBreak/>
+                       A5 Frances Farmer Will Have Her Revenge On Seattle
+                        <LineBreak/>
+                      A6 Dumb
+                        <LineBreak/>
+                       B1 Very Ape
+                        <LineBreak/>
+                      B2 Milk It
+                        <LineBreak/>
+                       B3 Pennyroyal Tea
+                        <LineBreak/>
+                      B4 Radio Friendly Unit Shifter
+                         <LineBreak/>
+                      B5 Tourette's
+                         <LineBreak/>
+                       B6 All Apologies
+                    </TextBlock>
+
+                    <TextBlock Text="4 300" Grid.Column="2" Margin="46,53,-56,101" x:Name="Sum"
+                               FontSize="35" Foreground="#00b7a5" FontWeight="Bold"/>
+
+                    <TextBlock Text="Руб." Grid.Column="2" Margin="150,53,-160,101"
+                               FontSize="35" Foreground="#00b7a5" FontWeight="Bold"/>
+
+                    <Button Content="В Корзину" Foreground="White" FontSize="18" FontWeight="Bold"  Background="#00b7a5" Grid.Column="2" Margin="46,112,40,48" Click="Button_Click"/>
+
+
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

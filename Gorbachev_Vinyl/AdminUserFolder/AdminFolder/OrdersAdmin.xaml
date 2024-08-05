@@ -1,0 +1,65 @@
+﻿<Window x:Class="Gorbachev_Vinyl.AdminUserFolder.AdminFolder.OrdersAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gorbachev_Vinyl.AdminUserFolder.AdminFolder"
+        mc:Ignorable="d"
+        Title="OrdersAdmin" Height="450" Width="800" WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+    <Border>
+        <Grid Background="#272537">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition/>
+                <RowDefinition Height="55"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Image Source="/Images/Cros.png" Grid.Column="1" Margin="750,10,3,27" MouseDown="Image_MouseDown"/>
+
+            <Image Source="/Images/sv.png" Grid.Column="1" Margin="729,18,28,35" MouseDown="Image_MouseDown_1"/>
+
+            <Button Grid.Column="1" Background="#00b7a5"
+                Margin="10"
+                x:Name="BtnBack"
+                Click="BtnBack_Click"
+                Content="Назад"
+                HorizontalAlignment="Left"
+                Width="100" Height="Auto"/>
+
+            <DataGrid Grid.Row="1" Grid.Column="1" x:Name="adminOrder" AutoGenerateColumns="False" IsReadOnly="True"  Margin="10,0">
+                <DataGrid.Columns>
+
+
+                    <DataGridTextColumn Header="Артист" Width="*" Binding="{Binding Artist}"/>
+                    <DataGridTextColumn Header="Альбом" Width="*" Binding="{Binding Album}" />
+                    <DataGridTextColumn Header="Формат" Width="*" Binding="{Binding Format}" />
+                    <DataGridTextColumn Header="Количество" Width="*" Binding="{Binding Quantity}" />
+                    <DataGridTextColumn Header="Сумма" Width="*" Binding="{Binding TotalPrice}" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Height="Auto"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left"
+                    x:Name="BtnDelete"
+                    Click="BtnDelete_Click"
+                    Content="Удалить" Background="#00b7a5"
+                    Width="150" Margin="10,10,0,10"/>
+
+            <TextBlock Text="Сумма :" Grid.Row="2" Grid.Column="1" Margin="260,6,411,-6" Foreground="#00b7a5" Background="Transparent"
+                         FontSize="25" FontWeight="Black"/>
+
+            <TextBlock Grid.Row="2" FontWeight="Black" Grid.Column="1" Margin="369,8,269,17" Text="24" Foreground="White" FontSize="24" x:Name="TBPrice"/>
+
+        </Grid>
+    </Border>
+</Window>

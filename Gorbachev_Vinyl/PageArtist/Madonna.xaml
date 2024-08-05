@@ -1,0 +1,160 @@
+﻿<Window x:Class="Gorbachev_Vinyl.PageArtist.Madonna"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gorbachev_Vinyl.PageArtist"
+        mc:Ignorable="d"
+        Title="Madonna" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+    <Border  Background="#272537" CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Image Source="/Images/Cros.png" Grid.Column="1" Margin="692,10,9,44" MouseDown="Image_MouseDown"/>
+
+            <Image Source="/Images/sv.png" Grid.Column="1" Margin="669,10,35,43" MouseDown="Image_MouseDown_1"/>
+
+
+            <TextBlock Text="Новое искусство"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White"
+                   FontSize="22"
+                   Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="На главную" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked_2"/>
+
+                <RadioButton  Content="О нас" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked_1"/>
+
+
+
+                <RadioButton Content="Назад" Height="50" 
+                             Foreground="White"
+                             FontSize="18"
+                             Style="{StaticResource MenuButton}" RenderTransformOrigin="0.51,0.57" Checked="RadioButton_Checked"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Grid.Column="1">
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="180"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Images2/Truebluealbum.jpg" Margin="5,5,5,0"/>
+                    <TextBlock Text="MADONNA - True Blue" Grid.Row="0"
+                               Grid.Column="1" Margin="0,0,27,45"
+                               FontSize="35" Foreground="White"
+                               FontWeight="Black" Grid.ColumnSpan="3"/>
+
+                    <TextBlock Text="Артист:" Grid.ColumnSpan="2" Margin="15,56,125,104" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="MADONNA" Grid.ColumnSpan="2" Margin="98,56,42,104" Grid.Column="1" x:Name="Artist"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+
+                    <TextBlock Text="Альбом:" Grid.ColumnSpan="2" Margin="15,100,110,60" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="True Blue" Grid.ColumnSpan="2" Margin="98,102,27,58" Grid.Column="1" x:Name="Album"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+
+                    <TextBlock Text="Лейбл:     
+Sire" Grid.ColumnSpan="2" Margin="15,140,90,20" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="Формат:" Grid.ColumnSpan="2" Margin="15,180,90,180" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.RowSpan="2"/>
+
+                    <TextBlock Text="LP" Grid.ColumnSpan="2" Margin="98,180,7,180" Grid.Column="1" x:Name="Format"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.RowSpan="2"/>
+
+                    <TextBlock Text="Каталожный номер: 8122-79735-8" Grid.ColumnSpan="2" Margin="15,20,28,140" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+
+                    <TextBlock Text="Штрихкод: 0081227973582" Grid.ColumnSpan="2" Margin="15,60,28,100" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+                    <TextBlock Text="Дата: 14 июля 2014" Grid.ColumnSpan="2" Margin="15,98,28,62" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+                    <TextBlock  Grid.Row="1" Grid.Column="0" FontSize="13" FontWeight="Light" Foreground="White" Margin="0,0,165,-37" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        Треклист :
+                        <LineBreak/>
+                       A1    Papa Don't Preach
+                         <LineBreak/>
+                      A2    Open Your Heart
+                        <LineBreak/>
+                      A3    White Heat
+                        <LineBreak/>
+                      A4    Live To Tell
+                        <LineBreak/>
+                      B1    Where's The Party
+                        <LineBreak/>
+                      B2    True Blue
+                        <LineBreak/>
+                      B3    La Isla Bonita
+                        <LineBreak/>
+                      B4    Jimmy Jimmy
+
+
+                    </TextBlock>
+
+                    <TextBlock Text="2 800" Grid.Column="2" Margin="133,53,10,101" x:Name="Sum"
+                               FontSize="35" Foreground="#00b7a5" FontWeight="Bold" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Text="Руб." Grid.Column="3" Margin="62,53,-88,101"
+                               FontSize="35" Foreground="#00b7a5" FontWeight="Bold"/>
+
+                    <Button Content="В Корзину" Foreground="White" FontSize="18" FontWeight="Bold"  Background="#00b7a5" Grid.Column="2" Margin="133,115,41,45" Grid.ColumnSpan="2" Click="Button_Click"/>
+
+
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

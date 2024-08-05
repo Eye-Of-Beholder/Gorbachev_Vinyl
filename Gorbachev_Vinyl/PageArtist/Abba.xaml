@@ -1,0 +1,163 @@
+﻿<Window x:Class="Gorbachev_Vinyl.PageArtist.Abba"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gorbachev_Vinyl.PageArtist"
+        mc:Ignorable="d"
+        Title="Abba" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+
+    <Border Background="#272537" CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Image Source="/Images/Cros.png" Grid.Column="1" MouseDown="Image_MouseDown" Margin="676,14,16,33"/>
+
+            <Image Source="/Images/sv.png" Grid.Column="1" MouseDown="Image_MouseDown_1" Margin="644,-10,51,10"/>
+
+            <TextBlock Text="Новое искусство"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White"
+                   FontSize="22"
+                   Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="На главную" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked_2"/>
+
+                <RadioButton  Content="О нас" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked_1"/>
+
+
+
+                <RadioButton Content="Назад" Height="50" 
+                             Foreground="White"
+                             FontSize="18"
+                             Style="{StaticResource MenuButton}" RenderTransformOrigin="0.51,0.57" Checked="RadioButton_Checked"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Grid.Column="1">
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="180"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Images2/Abba-Gold.jpg" Margin="5,5,5,0" />
+                    <TextBlock Text="ABBA - Gold" Grid.Row="0" x:Name="AbbaP"
+                               Grid.Column="1" Margin="0,0,27,45"
+                               FontSize="35" Foreground="White"
+                               FontWeight="Black" Grid.ColumnSpan="3"/>
+
+                    <TextBlock Text="Артист:" Grid.ColumnSpan="2" Margin="15,56,125,104" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+                    <TextBlock Text="ABBA" Grid.ColumnSpan="2" Margin="90,60,50,100" x:Name="Artist" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+
+                    <TextBlock Text="Альбом:" Grid.ColumnSpan="2"  Margin="15,100,110,60" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+                    <TextBlock Text="Gold" Grid.ColumnSpan="2" x:Name="Album" Margin="115,105,10,0" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Height="40" VerticalAlignment="Top"/>
+
+
+                    <TextBlock Text="Лейбл:     
+POLAR" Grid.ColumnSpan="2" Margin="15,145,90,15" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="Формат:"  Grid.ColumnSpan="2" Margin="15,180,90,180" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.RowSpan="2"/>
+
+
+                    <TextBlock Text="2LP" x:Name="LP" Grid.ColumnSpan="3" Margin="120,180,155,180" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.RowSpan="2"/>
+
+                    <TextBlock Text="Каталожный номер: 600753511060" Grid.ColumnSpan="2" Margin="15,0,28,140" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1" Height="40" VerticalAlignment="Bottom"/>
+
+
+                    <TextBlock Text="Штрихкод: 0600753511060" Grid.ColumnSpan="2" Margin="15,60,28,100" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+                    <TextBlock Text="Дата: 14 июля 2014" Grid.ColumnSpan="2" Margin="15,98,28,62" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+                    <TextBlock  Grid.Row="1" Grid.Column="0" FontSize="13" FontWeight="Light" Foreground="White" Margin="0,0,0,-37" Grid.RowSpan="2">
+                        Треклист :
+                        <LineBreak/>
+                       A1    Dancing Queen 3:49
+                         <LineBreak/>
+                       A2    Knowing Me, Knowing You 4:01
+                        <LineBreak/>
+                       A3    Take A Chance On Me 4:01
+                        <LineBreak/>
+                       A4    Mamma Mia 3:32
+                        <LineBreak/>
+                      A5    Lay All Your Love On Me 4:32
+                        <LineBreak/>
+                      B1    Super Trouper 4:10
+                        <LineBreak/>
+                      B2    I Have A Dream 4:43
+                        <LineBreak/>
+                      B3    The Winner Takes It All 4:54
+                        <LineBreak/>
+                      B4    Money, Money, Money 3:05
+                        <LineBreak/>
+                     B5    S.O.S. 3:19
+                    </TextBlock>
+
+                    <TextBlock Text="6 100" x:Name="SUMP" Grid.Column="2" Margin="136,53,94,101"
+                               FontSize="35" Foreground="#00b7a5" FontWeight="Bold" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Text="Руб" Grid.Column="3" Margin="63,54,-3,100"
+                               FontSize="35" Foreground="#00b7a5" FontWeight="Bold"/>
+
+
+
+                    <Button Content="В Корзину" Foreground="White" FontSize="18" FontWeight="Bold"  Background="#00b7a5" Grid.Column="2" Margin="133,115,41,45" Grid.ColumnSpan="2" Click="Button_Click"/>
+
+
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

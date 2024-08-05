@@ -1,0 +1,160 @@
+﻿<Window x:Class="Gorbachev_Vinyl.PageArtist.PageMetallica"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gorbachev_Vinyl.PageArtist"
+        mc:Ignorable="d"
+        Title="PageMetallica" Height="600" Width="920"
+         WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+
+    <Border Background="#272537" CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Image Source="/Images/Cros.png" Grid.Column="1" Margin="692,10,9,44" MouseDown="Image_MouseDown"/>
+
+            <Image Source="/Images/sv.png" Grid.Column="1" Margin="669,10,35,43" MouseDown="Image_MouseDown_1"/>
+
+
+
+            <TextBlock Text="Новое искусство"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White"
+                   FontSize="22"
+                   Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="На главную" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked_1"/>
+
+                <RadioButton  Content="О нас" Height="50"
+                          Foreground="White"
+                          FontSize="18"
+                             Style="{StaticResource MenuButton}" Checked="RadioButton_Checked"/>
+
+
+
+                <RadioButton Content="Назад" Height="50" Click="RadioButton_Click"
+                             Foreground="White"
+                             FontSize="18"
+                             Style="{StaticResource MenuButton}" RenderTransformOrigin="0.51,0.57"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Grid.Column="1">
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="18*"/>
+                        <ColumnDefinition Width="17*" />
+                        <ColumnDefinition Width="17*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Images/met.jpg" Margin="5,5,5,0"/>
+                    <TextBlock Text="METALLICA - Master Of Puppets" Grid.Row="0"
+                               Grid.Column="1" Margin="0,0,1,45"
+                               FontSize="30" Foreground="White"
+                               FontWeight="Black" Grid.ColumnSpan="3"/>
+
+                    <TextBlock Text="Артист:" Grid.ColumnSpan="2" Margin="15,56,121,104" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="METALLICA" Grid.ColumnSpan="2" Margin="90,60,46,100" Grid.Column="1" x:Name="Artist"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+
+                    <TextBlock Text="Альбом:" Grid.ColumnSpan="2" Margin="15,100,46,60" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="Master Of Puppets" Grid.ColumnSpan="3" Margin="90,102,141,58" Grid.Column="1" x:Name="Album"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+
+                    <TextBlock Text="Лейбл: Blackened" Grid.ColumnSpan="2" Margin="15,140,90,20" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="Формат:" Grid.ColumnSpan="2" Margin="15,180,90,180" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.RowSpan="2"/>
+
+                    <TextBlock Text="LP" Grid.ColumnSpan="3" Margin="112,180,163,180" Grid.Column="1" x:Name="Format"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.RowSpan="2"/>
+
+                    <TextBlock Text="Каталожный номер: BLCKND005R-1" Grid.ColumnSpan="2" Margin="15,20,28,140" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+
+                    <TextBlock Text="Штрихкод: 0858978005219" Grid.ColumnSpan="2" Margin="15,60,28,100" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+                    <TextBlock Text="Дата: 17 ноября 2017" Grid.ColumnSpan="2" Margin="15,98,28,62" Grid.Column="1"
+                               FontSize="20"
+                               Foreground="White" FontWeight="Light" Grid.Row="1"/>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" FontSize="14" FontWeight="Light" Foreground="White" Margin="0,0,2,-99" Grid.RowSpan="2">
+                        Треклист :
+                        <LineBreak />
+                        A1 Battery
+                         <LineBreak/>
+                       A2 Master Of Puppets
+                        <LineBreak/>
+                        
+                      A3 The Thing That Should Not Be
+                        <LineBreak/>
+                       A4 Welcome Home (Sanitarium)
+                        <LineBreak/>
+                       B1 Disposable Heroes
+                        <LineBreak/>
+                      B2 Leper Messiah
+                        <LineBreak/>
+                      B3 Orion 
+                        <LineBreak/>
+                      B4 Damage, Inc.
+                    </TextBlock>
+
+                    <TextBlock Text="5 600" Grid.Column="2" Margin="150,54,10,100" x:Name="Sum"
+                               FontSize="35" Foreground="#00b7a5" FontWeight="Bold" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Text="Руб." Grid.Column="3" Margin="85,56,-95,98"
+                               FontSize="35" Foreground="#00b7a5" FontWeight="Bold"/>
+
+                    <Button Content="В Корзину" Foreground="White" FontSize="18" FontWeight="Bold"  Background="#00b7a5" Grid.Column="2" Margin="150,115,27,45" Grid.ColumnSpan="2" Click="Button_Click"/>
+
+
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
